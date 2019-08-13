@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+/*default div style*/
+.std {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3vh;
+  background-color: #131313;
+  display: block;
+  width: 100%;
+}
+/*Headers*/
+h1 {
+  font-family: "Long Cang", cursive;
+  background-color: #464646 !important;
+  margin: 0px;
+}
+/*Navbar*/
+.navbar {
+  background-color: #464646 !important;
+}
+a, #myName{
+  color: white !important;
+  font-family: "Long Cang", cursive;
+}
+a {
+  font-size: x-large;
+  color: white !important; 
+  transition: 0.5s ease;
+}
+.navbar a:hover, #myName:hover {
+  font-size: xx-large;
+  text-shadow: 2px 3px 4px rgba(128, 128, 128, 0.8) !important;
+}
+@media only screen and (max-width: 576px) {
+  .nav-link {
+    margin-top: 0px;
+  }
+}
+ ul,li{
+  list-style: none;
+}
+li{
+  text-align: center;
+}
+
+/*Carousel*/
+.carousel-inner img{
+  height: 100%;
+  width: 100%;
+}
+.carousel{
+  width: 50%;
+  margin-top: 110px;
+}
+.carouselContainer{
+  background-color: #131313;
+}
+
+/*Image Gallery*/
+.Gallery div {
+  display: inline-block;
+}
+.Gallery {
+  background-color: #131313;
+  display: block;
+}
+.d-flex div{
+  margin: 10px;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+/*Image Modal*/
+#theModal {
+  z-index: 1;
+  background-color: #808080cc;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  overflow: auto;
+}
+.modal-Content {
+  margin: 40px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#close {
+  margin: 0px;
+  padding: 2px 5px;
+  border-radius: 50%;
+  background-color: #131313;
+  color: #ffffff;
+  cursor: pointer;
+  position: absolute;
+  right:10px;
+  top: 10px;
+}
+#img01 {
+  max-height: 500px;
+  max-width: 800px;
+}
+@media only screen and (max-width: 800px) {
+  #img01 {
+    max-width: 400px;
+  }
+  .modal-Content{
+    margin: auto;
+    margin-top: 60px;
+  }
+}
+/*Skillset images*/
+#skillSet div{
+  display: inline-block;
+  margin: 10px;
+
+}
+/*Contact form*/
+#form{
+  margin-left: auto;
+  margin-right: auto;
+}
+#form input, textarea, #submit{
+  margin: 10px;
+}
+textarea{
+  width: 600px; 
+}
+@media only screen and (max-width: 600px){
+  textarea{
+    width: 400px;
+  }
+}
+#submit{
+  background-color: #131313;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+#email{
+  font-family: "Long Cang", cursive;
+  font-size: xx-large;
+  position: relative;
+  float: right;
+  background-color: #131313;
+  color: #ffffff;
+}
